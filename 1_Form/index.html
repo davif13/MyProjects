@@ -3,14 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário do Dev</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <!--Normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <h1 id="title">Formulário do Dev</h1>
+    <h1 id="title">&#60;Formulário do Dev&#62;</h1>
     <p id="description">Olá! Esse formulário tem como missão conhecer você melhor. #letscode</p>
-    <form id="survey-form" method="post" action="">
+    <form id="survey-form" method="post" action=" ">
         <fieldset>
             <label for="name" id="name-label">Insira seu nome: </label>
             <input id="name" type="text" placeholder="Maria" required />
@@ -19,30 +26,26 @@
             <label for="number" id="number-label">Insira sua idade: </label>
             <input id="number" type="number" min="10" max="120" placeholder="idade" />
             <br>
-            <label for="coding-choice" class="margin">Você foca mais em qual área da programação?
-                <br>
-                <select id="dropdown" name="coding-choice">
-                    <br>
+            <label for="dropdown">Você foca mais em qual área da programação?</label>
+                <select id="dropdown" name="dropdown">
                     <option value="">(escolha um)</option>
                     <option value="1">Front-end</option>
                     <option value="2">Back-end</option>
                     <option value="3">Mobile</option>
                     <option value="4">Ainda não decidi</option>
                 </select>
-            </label>
-            <label for="work"><span>Você já se acha pronto para começar a trabalhar na área?</span></label>
+            <label for="work" class="working">Você já se acha pronto para começar a trabalhar na área?</label>
             <input id="work" type="radio" name="work" class="inline" value="1" /><span> Sim</span>
             <input id="work" type="radio" name="work" class="inline" value="0" /> <span>Não</span>
             <p class="platform">Escolha as plataformas que você usa para estudar:</p>
             <label for="learning-platforms">
-                <input id="learning-platforms" type="checkbox" name="learning-platforms" value="1" />Alura
-                <input id="learning-platforms" type="checkbox" name="learning-platforms" value="2" />DIO
-                <input id="learning-platforms" type="checkbox" name="learning-platforms" value="3" />Udemy
-                <input id="learning-platforms" type="checkbox" name="learning-platforms"
-                    value="4" />freeCodeCamp
-                <input id="learning-platforms" type="checkbox" name="learning-platforms" value="5" />Outros
+                <input id="learning-platforms" type="checkbox" name="learning-platforms" value="1" /> Alura
+                <input id="learning-platforms" type="checkbox" name="learning-platforms" value="2" /> DIO
+                <input id="learning-platforms" type="checkbox" name="learning-platforms" value="3" /> Udemy
+                <input id="learning-platforms" type="checkbox" name="learning-platforms" value="4" /> freeCodeCamp
+                <input id="learning-platforms" type="checkbox" name="learning-platforms" value="5" /> Outros
             </label>
-            <label for="challenge">Qual seu maior desafio atualmente?
+            <label for="challenge">Qual seu maior desafio atualmente?</label>
                 <textarea id="challenge" name="challenge" rows="3" cols="50"
                     placeholder="Criar um formulário, lógica de programação..."></textarea>
         </fieldset>
