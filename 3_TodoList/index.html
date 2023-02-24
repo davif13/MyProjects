@@ -6,19 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles.css">
-    <script src="./assets/scripts.js"></script>
-    <title>Todo List</title>
+    <title>Todo List by Davi Fernandez</title>
 </head>
 
 <body>
-    <div>
-        <h1>Lista de Tarefas</h1>
+    <h1>Davi's Todo List</h1>
+    <div class="list-container">
         <ul id="list"></ul>
     </div>
-    <div>
+    <div id="form">
         <input type="text" id="task_name" name="task_name" placeholder="Nome da tarefa" />
-        <button onclick="addNewTask()">Adicionar</button>
+        <button id="submit-button" type="submit" onclick="addNewTask()">Adicionar</button>
     </div>
 </body>
-
+<script src="./assets/scripts.js"></script>
 </html>
